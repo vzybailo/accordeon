@@ -1,0 +1,38 @@
+html {
+    background-color: rgb(34, 33, 33);
+}
+
+.slides__list {
+    display: flex;
+}
+
+.slides__item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 800ms ease-in-out;
+}
+
+.slides__item.active {
+    flex: 10;
+}
+
+.slides__item.active .slides__title {
+    opacity: 1;
+}
+
+.slides__title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.4s;
+}
